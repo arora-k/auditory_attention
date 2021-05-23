@@ -22,7 +22,7 @@ rippleParam.freq = cen_freq;  %center frequencies of ripples (in Hz)
 rippleParam.width = 10;          %width of ripple frequency band (in number of model channels)
 
 %%initialize output
-nrsounds = numel(rippleParam.width)*numel(rippleParam.freq)*numel(rippleParam.rate);
+nrsounds = numel(rippleParam.width)*numel(rippleParam.freq);
 sounds = zeros(nrsounds,fs);
 LookupVect = zeros(nrsounds,5);
 
